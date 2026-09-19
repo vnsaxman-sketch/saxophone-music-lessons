@@ -1,0 +1,684 @@
+:root {
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+
+  color: #2d241b;
+  background: #f8f3eb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --brown: #5b351c;
+  --dark-brown: #2e1c10;
+  --gold: #c9983e;
+  --light-gold: #e8c875;
+  --cream: #f8f3eb;
+  --white: #ffffff;
+  --text: #2d241b;
+  --muted: #756b61;
+  --border: #e4d8c8;
+  --shadow: 0 12px 35px rgba(65, 43, 25, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--cream);
+  color: var(--text);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(46, 28, 16, 0.97);
+  border-bottom: 1px solid rgba(232, 200, 117, 0.2);
+}
+
+.header-inner {
+  max-width: 1250px;
+  margin: auto;
+  min-height: 76px;
+  padding: 12px 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.brand {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  text-align: left;
+}
+
+.brand-icon {
+  font-size: 28px;
+}
+
+.nav {
+  display: flex;
+  gap: 4px;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-button {
+  border: 0;
+  background: transparent;
+  color: #dfd4c7;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.nav-button:hover,
+.nav-button.active {
+  color: #fff;
+  background: rgba(201, 152, 62, 0.18);
+}
+
+.language-switcher {
+  display: flex;
+  gap: 4px;
+}
+
+.language {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  color: #d8cdc0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.language.active {
+  background: var(--gold);
+  color: var(--dark-brown);
+}
+
+.hero {
+  min-height: 600px;
+  padding: 80px max(24px, calc((100vw - 1200px) / 2));
+
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  align-items: center;
+
+  background:
+    radial-gradient(circle at 80% 45%, rgba(201, 152, 62, 0.3), transparent 30%),
+    linear-gradient(135deg, #2e1c10, #5b351c);
+  color: white;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-badge,
+.eyebrow {
+  color: var(--light-gold);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.hero h1 {
+  font-size: clamp(28px, 6vw, 58px);
+  line-height: 1.02;
+  margin: 18px 0;
+}
+
+.hero p {
+  color: #dfd2c4;
+  font-size: 20px;
+  line-height: 1.7;
+  max-width: 650px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.hero-saxophone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sax-glow {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #e8c875, #c9983e 35%, transparent 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.35));
+}
+
+.primary-button,
+.secondary-button,
+.small-button {
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: 800;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+}
+
+.primary-button {
+  background: var(--gold);
+  color: #24160b;
+}
+
+.primary-button:hover {
+  background: var(--light-gold);
+  transform: translateY(-1px);
+}
+
+.secondary-button {
+  background: transparent;
+  color: inherit;
+  border-color: currentColor;
+}
+
+.secondary-button:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hero .secondary-button {
+  color: white;
+}
+
+.small-button {
+  padding: 8px 12px;
+  background: var(--brown);
+  color: white;
+}
+
+.section,
+.page-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 24px;
+}
+
+.light-section {
+  max-width: none;
+  padding-left: max(24px, calc((100vw - 1200px) / 2));
+  padding-right: max(24px, calc((100vw - 1200px) / 2));
+  background: #fff;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.section-heading h1,
+.section-heading h2 {
+  margin: 12px 0;
+  color: var(--dark-brown);
+  font-size: clamp(32px, 5vw, 48px);
+}
+
+.section-heading p {
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+.lesson-grid,
+.theory-grid,
+.practice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.lesson-card,
+.theory-card,
+.practice-card,
+.practice-timer,
+.about-card,
+.policy-option {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.lesson-card {
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+}
+
+.lesson-icon,
+.theory-icon,
+.practice-icon {
+  font-size: 42px;
+}
+
+.lesson-content {
+  flex: 1;
+}
+
+.level-badge {
+  display: inline-block;
+  background: #f1e5d0;
+  color: var(--brown);
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.lesson-card h3,
+.theory-card h3,
+.practice-card h3 {
+  color: var(--dark-brown);
+  margin: 10px 0;
+}
+
+.lesson-card p,
+.theory-card p,
+.practice-card p {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.lesson-footer {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.center-button {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.policy-section {
+  margin-top: 25px;
+}
+
+.policy-card {
+  padding: 25px;
+  border-radius: 16px;
+  background: #2e1c10;
+  color: white;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  box-shadow: var(--shadow);
+}
+
+.policy-icon {
+  font-size: 34px;
+}
+
+.policy-card h3 {
+  margin: 0 0 8px;
+  color: var(--light-gold);
+}
+
+.policy-card p {
+  margin: 0;
+  line-height: 1.65;
+  color: #e4d7ca;
+}
+
+.policy-columns {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.policy-option {
+  padding: 24px;
+}
+
+.policy-option h3 {
+  margin-top: 0;
+}
+
+.policy-option p {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.policy-option.youth {
+  border-left: 4px solid var(--gold);
+}
+
+.theory-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.theory-card {
+  padding: 28px;
+}
+
+.practice-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.practice-card,
+.practice-timer {
+  padding: 30px;
+}
+
+.practice-card li {
+  margin: 10px 0;
+  color: var(--muted);
+}
+
+.practice-timer {
+  text-align: center;
+}
+
+.timer-display {
+  font-size: 64px;
+  font-weight: 800;
+  color: var(--brown);
+  margin: 25px 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.timer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.booking-form {
+  max-width: 950px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.booking-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: var(--dark-brown);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fffdf9;
+  color: var(--text);
+  outline: none;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201, 152, 62, 0.12);
+}
+
+.message-field {
+  margin-top: 20px;
+}
+
+.youth-warning {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: #fff4d7;
+  color: #68470b;
+  border: 1px solid #ecd18d;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.form-actions .secondary-button {
+  color: var(--brown);
+  border-color: var(--border);
+}
+
+.success-message {
+  padding: 18px;
+  background: #edf7ee;
+  border: 1px solid #b8d9ba;
+  color: #285b2d;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.about-card {
+  padding: 35px;
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.about-image {
+  min-height: 300px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #2e1c10, #c9983e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 130px;
+}
+
+.large-text {
+  font-size: 21px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.about-features div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--brown);
+}
+
+.about-features strong {
+  font-size: 24px;
+}
+
+.footer {
+  background: var(--dark-brown);
+  color: white;
+  padding: 35px 24px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer p {
+  color: #cfc1b4;
+  margin-bottom: 0;
+}
+
+.footer-note {
+  color: var(--light-gold);
+  align-self: center;
+}
+
+@media (max-width: 900px) {
+  .header-inner {
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    flex: 1;
+  }
+
+  .nav {
+    order: 3;
+    flex-basis: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 4px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-saxophone {
+    display: none;
+  }
+
+  .theory-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .header-inner {
+    padding: 10px 14px;
+  }
+
+  .brand {
+    font-size: 13px;
+  }
+
+  .language-switcher {
+    margin-left: auto;
+  }
+
+  .nav-button {
+    white-space: nowrap;
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 540px;
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .section,
+  .page-section {
+    padding: 50px 18px;
+  }
+
+  .lesson-grid,
+  .theory-grid,
+  .practice-grid,
+  .policy-columns,
+  .form-grid,
+  .about-card {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson-card {
+    flex-direction: column;
+  }
+
+  .booking-form {
+    padding: 20px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+
+  .about-image {
+    min-height: 220px;
+    font-size: 90px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+  }
+}
