@@ -60,6 +60,15 @@ function App() {
         <AgePolicy language={language} />
 	<ContactInstructor language={language} />
       </section>
+      
+      <section className="audio-section">
+  	<h2>Listen to My Practice</h2>
+
+  	<audio controls preload="metadata">
+    	<source src={`${import.meta.env.BASE_URL}selmer-sba.mp3`} type="audio/mpeg" />
+    	Your browser does not support audio playback.
+  	</audio>
+      </section>
 
       <section className="section light-section">
         <div className="section-heading">
