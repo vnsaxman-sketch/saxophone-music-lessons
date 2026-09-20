@@ -5,6 +5,7 @@ import LessonCard from './components/LessonCard';
 import AgePolicy from './components/AgePolicy';
 import BookingForm from './components/BookingForm';
 import PracticeTimer from './components/PracticeTimer';
+import ContactInstructor from './components/ContactInstructor';
 import { lessons, theoryTopics } from './data';
 import type { Language } from './types';
 import { t } from './i18n';
@@ -57,6 +58,7 @@ function App() {
 
       <section className="section">
         <AgePolicy language={language} />
+	<ContactInstructor language={language} />
       </section>
 
       <section className="section light-section">
@@ -192,7 +194,9 @@ function App() {
       </div>
 
       <BookingForm language={language} />
+      <ContactInstructor language={language} />
     </section>
+
   );
 
   const renderAbout = () => (

@@ -1,8 +1,7 @@
-import type { Language } from './types';
-
 export const translations = {
   en: {
     brand: 'Saxophone & Music Theory Studio',
+
     navHome: 'Home',
     navLessons: 'Lessons',
     navTheory: 'Music Theory',
@@ -24,38 +23,39 @@ export const translations = {
     intermediate: 'Intermediate',
     advanced: 'Advanced',
 
-    theoryTitle: 'Music Theory',
+    theoryTitle: 'Music Theory Learning Center',
     theoryText:
-      'Build a stronger musical foundation while developing your saxophone skills.',
+      'Build a strong understanding of music theory and apply it directly to your saxophone playing.',
 
     practiceTitle: 'Practice Center',
     practiceText:
-      'Use simple tools to support your daily music practice.',
+      'Use focused practice sessions to develop technique, sound, rhythm, and musical confidence.',
 
     agePolicyTitle: 'Student Age Policy',
     agePolicy:
       'Adults may request individual or small-group lessons on weekdays or weekends. Students under 18 are offered small-group lessons on weekends only.',
 
-    adultTitle: 'Adult Students',
+    adultTitle: 'Adults',
     adultText:
-      'Individual and small-group lessons are available for adults of all levels.',
+      'Individual or small-group lessons are available on weekdays and weekends.',
 
     youthTitle: 'Students Under 18',
     youthText:
-      'Small-group lessons are available on weekends only for students under 18.',
+      'Small-group lessons are available on weekends only.',
 
     bookingTitle: 'Request a Lesson',
+
     name: 'Name',
     email: 'Email',
     phone: 'Phone',
-    ageGroup: 'Student',
+    ageGroup: 'Student Age',
     adult: 'Adult',
     under18: 'Under 18',
     format: 'Lesson Format',
     individual: 'Individual',
     group: 'Small Group',
     level: 'Level',
-    lessonType: 'Lesson Subject',
+    lessonType: 'Lesson Type',
     saxophone: 'Saxophone',
     alto: 'Alto Saxophone',
     tenor: 'Tenor Saxophone',
@@ -63,9 +63,9 @@ export const translations = {
     baritone: 'Baritone Saxophone',
     preferredDay: 'Preferred Day',
     preferredTime: 'Preferred Time',
-    message: 'Additional Message',
-    submit: 'Send Lesson Request',
-    clear: 'Clear',
+    message: 'Message',
+    submit: 'Request Lesson',
+    clear: 'Clear Form',
 
     weekday: 'Weekday',
     weekend: 'Weekend',
@@ -73,13 +73,15 @@ export const translations = {
     youthWarning:
       'Students under 18 may request small-group lessons on weekends only.',
 
-    requestSent: 'Your lesson request has been prepared.',
-    requestNote:
-      'Please keep your contact information accurate so the instructor can follow up.',
+    requestSent:
+      'Your lesson request has been saved. The instructor will contact you soon.',
 
-    aboutTitle: 'About the Studio',
+    requestNote:
+      'Please provide your preferred schedule and any questions you have about the lessons.',
+
+    aboutTitle: 'About the Instructor',
     aboutText:
-      'The studio combines practical saxophone instruction with music theory so students can understand not only what to play, but why it works.',
+      'Personalized instruction focused on saxophone performance, music theory, improvisation, and developing confident musicianship.',
 
     practiceTimer: 'Practice Timer',
     start: 'Start',
@@ -87,11 +89,18 @@ export const translations = {
     reset: 'Reset',
 
     footer:
-      'Saxophone & Music Theory Studio — Music education for lifelong learners.',
+      'Saxophone & Music Theory Studio — Learn. Understand. Play.',
+
+    // Contact information
+    contactTitle: 'Contact the Instructor',
+    instructor: 'Instructor',
+    cellPhone: 'Cell Phone',
+    emailAddress: 'Email',
   },
 
   vi: {
-    brand: 'Lớp Saxophone & Lý Thuyết Âm Nhạc',
+    brand: 'Studio Saxophone & Lý Thuyết Âm Nhạc',
+
     navHome: 'Trang Chủ',
     navLessons: 'Bài Học',
     navTheory: 'Lý Thuyết Âm Nhạc',
@@ -101,60 +110,61 @@ export const translations = {
 
     heroTitle: 'Học Saxophone. Hiểu Âm Nhạc. Chơi Tự Tin.',
     heroText:
-      'Dạy saxophone và lý thuyết âm nhạc cho người lớn và nhóm nhỏ ở mọi trình độ.',
+      'Học saxophone và lý thuyết âm nhạc theo hướng cá nhân hóa dành cho người lớn và nhóm nhỏ ở mọi trình độ.',
     heroButton: 'Xem Các Bài Học',
-    bookingButton: 'Đăng Ký Buổi Học',
+    bookingButton: 'Đăng Ký Học',
 
-    lessonsTitle: 'Các Bài Học',
+    lessonsTitle: 'Bài Học',
     lessonsText:
-      'Chọn bài học phù hợp với mục tiêu và trình độ âm nhạc của bạn.',
+      'Chọn bài học phù hợp với mục tiêu âm nhạc và trình độ hiện tại của bạn.',
 
     beginner: 'Cơ Bản',
     intermediate: 'Trung Cấp',
     advanced: 'Nâng Cao',
 
-    theoryTitle: 'Lý Thuyết Âm Nhạc',
+    theoryTitle: 'Trung Tâm Học Lý Thuyết Âm Nhạc',
     theoryText:
-      'Xây dựng nền tảng âm nhạc vững chắc song song với kỹ năng saxophone.',
+      'Xây dựng nền tảng lý thuyết âm nhạc vững chắc và áp dụng trực tiếp vào việc chơi saxophone.',
 
-    practiceTitle: 'Luyện Tập',
+    practiceTitle: 'Trung Tâm Luyện Tập',
     practiceText:
-      'Sử dụng các công cụ đơn giản để hỗ trợ việc luyện tập âm nhạc hàng ngày.',
+      'Sử dụng các buổi luyện tập tập trung để phát triển kỹ thuật, âm thanh, nhịp điệu và sự tự tin.',
 
-    agePolicyTitle: 'Quy Định Độ Tuổi',
+    agePolicyTitle: 'Quy Định Độ Tuổi Học Viên',
     agePolicy:
       'Người lớn có thể đăng ký học cá nhân hoặc nhóm nhỏ vào các ngày trong tuần hoặc cuối tuần. Học sinh dưới 18 tuổi chỉ được học theo nhóm nhỏ vào cuối tuần.',
 
-    adultTitle: 'Học Viên Người Lớn',
+    adultTitle: 'Người Lớn',
     adultText:
-      'Có lớp cá nhân và nhóm nhỏ dành cho người lớn ở mọi trình độ.',
+      'Có thể học cá nhân hoặc nhóm nhỏ vào các ngày trong tuần và cuối tuần.',
 
     youthTitle: 'Học Sinh Dưới 18 Tuổi',
     youthText:
-      'Học sinh dưới 18 tuổi chỉ được đăng ký lớp nhóm nhỏ vào cuối tuần.',
+      'Chỉ có lớp nhóm nhỏ vào cuối tuần.',
 
-    bookingTitle: 'Đăng Ký Buổi Học',
-    name: 'Họ và Tên',
+    bookingTitle: 'Đăng Ký Học',
+
+    name: 'Họ Tên',
     email: 'Email',
     phone: 'Điện Thoại',
-    ageGroup: 'Đối Tượng',
+    ageGroup: 'Độ Tuổi Học Viên',
     adult: 'Người Lớn',
     under18: 'Dưới 18 Tuổi',
     format: 'Hình Thức Học',
     individual: 'Cá Nhân',
     group: 'Nhóm Nhỏ',
     level: 'Trình Độ',
-    lessonType: 'Nội Dung Học',
-    saxophone: 'Loại Saxophone',
-    alto: 'Alto Saxophone',
-    tenor: 'Tenor Saxophone',
-    soprano: 'Soprano Saxophone',
-    baritone: 'Baritone Saxophone',
+    lessonType: 'Loại Bài Học',
+    saxophone: 'Saxophone',
+    alto: 'Saxophone Alto',
+    tenor: 'Saxophone Tenor',
+    soprano: 'Saxophone Soprano',
+    baritone: 'Saxophone Baritone',
     preferredDay: 'Ngày Mong Muốn',
     preferredTime: 'Thời Gian Mong Muốn',
-    message: 'Ghi Chú Thêm',
-    submit: 'Gửi Yêu Cầu Học',
-    clear: 'Xóa',
+    message: 'Tin Nhắn',
+    submit: 'Đăng Ký Học',
+    clear: 'Xóa Biểu Mẫu',
 
     weekday: 'Ngày Trong Tuần',
     weekend: 'Cuối Tuần',
@@ -162,13 +172,15 @@ export const translations = {
     youthWarning:
       'Học sinh dưới 18 tuổi chỉ có thể đăng ký lớp nhóm nhỏ vào cuối tuần.',
 
-    requestSent: 'Yêu cầu học của bạn đã được chuẩn bị.',
-    requestNote:
-      'Vui lòng cung cấp thông tin liên hệ chính xác để giáo viên có thể liên lạc lại.',
+    requestSent:
+      'Yêu cầu học của bạn đã được lưu. Giáo viên sẽ liên hệ với bạn sớm.',
 
-    aboutTitle: 'Giới Thiệu Lớp Học',
+    requestNote:
+      'Vui lòng cung cấp lịch học mong muốn và bất kỳ câu hỏi nào về bài học.',
+
+    aboutTitle: 'Giới Thiệu Giáo Viên',
     aboutText:
-      'Lớp học kết hợp kỹ thuật saxophone thực tế với lý thuyết âm nhạc để học viên không chỉ biết chơi gì mà còn hiểu tại sao cách chơi đó hiệu quả.',
+      'Hướng dẫn cá nhân hóa về biểu diễn saxophone, lý thuyết âm nhạc, ứng tấu và phát triển sự tự tin trong âm nhạc.',
 
     practiceTimer: 'Đồng Hồ Luyện Tập',
     start: 'Bắt Đầu',
@@ -176,12 +188,21 @@ export const translations = {
     reset: 'Đặt Lại',
 
     footer:
-      'Lớp Saxophone & Lý Thuyết Âm Nhạc — Học âm nhạc cho mọi giai đoạn của cuộc sống.',
+      'Studio Saxophone & Lý Thuyết Âm Nhạc — Học. Hiểu. Chơi.',
+
+    // Contact information
+    contactTitle: 'Liên Hệ Giáo Viên',
+    instructor: 'Giáo Viên',
+    cellPhone: 'Điện Thoại',
+    emailAddress: 'Email',
   },
 } as const;
 
-export type TranslationKey = keyof typeof translations.en;
+export type Language = keyof typeof translations;
 
-export function t(language: Language, key: TranslationKey): string {
+export function t(
+  language: Language,
+  key: keyof typeof translations.en
+): string {
   return translations[language][key];
 }
