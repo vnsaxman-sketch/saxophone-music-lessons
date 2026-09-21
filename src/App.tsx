@@ -69,7 +69,7 @@ function App() {
     	Your browser does not support audio playback.
   	</audio>
 	<audio controls preload="metadata">
-    	<source src={`${import.meta.env.BASE_URL}practice-session.mp3`} type="audio/mpeg" />
+    	<source src={`${import.meta.env.BASE_URL}conn-soprano.mp3`} type="audio/mpeg" />
     	Your browser does not support audio playback.
   	</audio>
       </section>
