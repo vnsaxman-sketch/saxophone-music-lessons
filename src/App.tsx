@@ -64,18 +64,45 @@ function App() {
       <section className="audio-section">
   	<h2>Listen to My Practice Sessions</h2>
 
-  	<audio controls preload="metadata">
-    	<source src={`${import.meta.env.BASE_URL}mambo-influenciado.mp3`} type="audio/mpeg" />
-    	Your browser does not support audio playback.
-  	</audio>
-	<audio controls preload="metadata">
-    	<source src={`${import.meta.env.BASE_URL}conn-soprano.mp3`} type="audio/mpeg" />
-    	Your browser does not support audio playback.
-  	</audio>
-	<audio controls preload="metadata">
-    	<source src={`${import.meta.env.BASE_URL}selmer-sba.mp3`} type="audio/mpeg" />
-    	Your browser does not support audio playback.
-  	</audio>
+  	<audio
+  	controls
+  	controlsList="nodownload"
+  	preload="metadata"
+  	onContextMenu={(e) => e.preventDefault()}
+	>
+  	 <source
+    	  src={`${import.meta.env.BASE_URL}mambo-influenciado.mp3`}
+    	  type="audio/mpeg"
+  	 />
+  	  Your browser does not support audio playback.
+	</audio>
+
+	<audio
+  	controls
+  	controlsList="nodownload"
+  	preload="metadata"
+  	onContextMenu={(e) => e.preventDefault()}
+	>
+  	 <source
+    	  src={`${import.meta.env.BASE_URL}conn-soprano.mp3`}
+    	  type="audio/mpeg"
+  	 />
+  	  Your browser does not support audio playback.
+	</audio>
+
+	<audio
+  	controls
+  	controlsList="nodownload"
+  	preload="metadata"
+  	onContextMenu={(e) => e.preventDefault()}
+	>
+  	 <source
+    	  src={`${import.meta.env.BASE_URL}selmer-sba.mp3`}
+    	  type="audio/mpeg"
+  	 />
+  	  Your browser does not support audio playback.
+	</audio>
+
       </section>
 
       <section className="section light-section">
