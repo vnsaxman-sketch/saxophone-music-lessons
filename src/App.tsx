@@ -84,7 +84,7 @@ function App() {
   	onContextMenu={(e) => e.preventDefault()}
 	>
   	 <source
-    	  src={`${import.meta.env.BASE_URL}tenor-sax.mp3`}
+    	  src={`${import.meta.env.BASE_URL}practice-session.mp3`}
     	  type="audio/mpeg"
   	 />
   	  Your browser does not support audio playback.
@@ -97,7 +97,7 @@ function App() {
   	onContextMenu={(e) => e.preventDefault()}
 	>
   	 <source
-    	  src={`${import.meta.env.BASE_URL}yanagisawa.mp3`}
+    	  src={`${import.meta.env.BASE_URL}Iloveyou.mp3`}
     	  type="audio/mpeg"
   	 />
   	  Your browser does not support audio playback.
