@@ -17,6 +17,10 @@ export default function Footer({ language }: FooterProps) {
         <div className="footer-note">
           <span>English / Tiếng Việt</span>
         </div>
+
+	<p className="deeloper-credit">
+	  {t(language, 'developerCredit')}
+	</p>  
       </div>
     </footer>
   );

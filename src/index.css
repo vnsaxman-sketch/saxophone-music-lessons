@@ -796,3 +796,10 @@ button {
 .audio-section audio {
   width: min(100%, 500px);
 }
+
+.developer-credit {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--light-gold);
+  text-align: center;
+}

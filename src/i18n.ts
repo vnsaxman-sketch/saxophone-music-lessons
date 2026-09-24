@@ -96,6 +96,8 @@ export const translations = {
     instructor: 'Instructor',
     cellPhone: 'Cell Phone',
     emailAddress: 'Email',
+   
+   developerCredit: 'Developed by Long Nguyen',
   },
 
   vi: {
@@ -195,6 +197,8 @@ export const translations = {
     instructor: 'Giáo Viên',
     cellPhone: 'Điện Thoại',
     emailAddress: 'Email',
+
+    developerCredit: 'Phát triển bởi Long Nguyen',
   },
 } as const;
 
